@@ -1,0 +1,75 @@
+
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">Bienvenue</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fa fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" style="color:black" routerLink="/reservation" >Reservation</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" style="color:black" routerLink="/codification" >Codification</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" style="color:black" routerLink="/home" >Deconnexion</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+ 
+  <section class="features" id="features">
+    <div class="container">
+      <div class="section-heading text-center header-w3l">
+        <h1>
+          <span>E</span>cole
+          <span>S</span>uperieur
+          <span>P</span>olytechnique
+        </h1>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 my-auto">
+          <div class="device-container">
+            <div class="device-mockup iphone6_plus portrait white">
+              <div class="device">
+                <div class="screen">
+                  <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
+                  <img src="assets/acceuil/img/ca.png" class="img-fluid" alt="">
+                </div>
+                <div class="button">
+                  <!-- You can hook the "home button" to some JavaScript events or just remove it -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <router-outlet></router-outlet>
+      </div>
+    </div>
+  </section>
+  
+
+  <footer>
+    <div class="container">
+      <p>&copy; Votre Site Web, Tous droits reserves</p>
+      <ul class="list-inline">
+        <li class="list-inline-item">
+          <a href="#">Confidentialit2</a>
+        </li>
+        <li class="list-inline-item">
+          <a href="#">modalites</a>
+        </li>
+        <li class="list-inline-item">
+          <a href="#">FAC</a>
+        </li>
+      </ul>
+    </div>
+  </footer>

@@ -1,0 +1,47 @@
+
+  <div class="header-w3l">
+    <h1>
+      <span>R</span>eservation
+    </h1>
+  </div>
+  <form action="#" method="post">
+    <div class="pom-agile">
+      <span  aria-hidden="true">Batiments</span>
+      <select name="etage" required [(ngModel)]="postBatiment" (change)="select($event.target.value)" >
+        <option *ngFor="let item of batiments" [value]="item.id">{{item.nombatiment}}</option>
+      </select>
+    </div>
+    <div class="pom-agile">
+      <span  aria-hidden="true">Etages</span>
+      <select name="etage" required (change)="selectEtage($event.target.value)">
+        <option *ngFor="let item of etages" [value]="item.id">{{item.numetage}}</option>
+      </select>
+    </div>
+    <div class="pom-agile">
+      <span aria-hidden="true">Couloirs</span>
+      <select name="couloir" required (change)="selectCouloir($event.target.value)">
+        <option *ngFor="let item of couloirs" [value]="item.id">{{item.nomcouloir}}</option>
+      </select>
+    </div>
+    <div class="pom-agile">
+      <span  aria-hidden="true">Chambres</span>
+      <select name="chambre" required>
+        <option *ngFor="let item of chambres" [value]="item.id">{{item.numchambre}}</option>
+      </select>
+    </div>
+    <div class="pom-agile">
+      <span aria-hidden="true"></span>
+      <select name="position" required>
+        <option value="1">Position 1</option>
+        <option value="2">Position 2</option>
+        <option value="3">Position 3</option>
+        <option value="4">Position 4</option>
+      </select>
+    </div>
+  </form> 
+  <div class="right-w3l">
+    <button class="btn1" (click)="reverser()"> Validez </button>
+    <button class="btn1" (click)="inscription()"> Modifier </button>
+    <button class="btn1" routerLink="/code"> Annuler </button>
+  </div>
+  
